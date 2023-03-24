@@ -70,6 +70,14 @@ public class Main {
 
     public static void task5 () {
         System.out.println("Задача 5");
+        byte totalPaint = 120;
+        short white = 2;
+        short brown = 4;
+        int paintOneClass = white + brown;
+        int classInSchool = totalPaint / paintOneClass;
+        int totalWhite = white * classInSchool;
+        int totalBrown = brown * classInSchool;
+        System.out.println("В школе, где " + classInSchool + " классов, нужно " + totalWhite + " банок белой краски и " + totalBrown + " банок коричневой краски.");
     }
 
     public static void task6 () {
