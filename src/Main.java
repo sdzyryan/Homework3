@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -108,6 +109,11 @@ public class Main {
         System.out.println("При снижении веса на " + weightLoss2 + " грамм в день - потребуется " + dayWeightLoss2 + " дней.");
         int middleDayWeightLoss = (dayWeightLoss1 + dayWeightLoss2) / 2;
         System.out.println("В среднем понадобится " + middleDayWeightLoss + " день.");
+    }
+
+    public static void task8 () {
+        System.out.println("Задача 8");
+
     }
 
 }
