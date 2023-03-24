@@ -82,6 +82,19 @@ public class Main {
 
     public static void task6 () {
         System.out.println("Задача 6");
+        byte bananas = 5;
+        byte weightOneBananas = 80;
+        short milk = 200;
+        byte weightMilk100Ml = 105;
+        float weightMilkOneMl = weightMilk100Ml / 100f;
+        byte icecream = 2;
+        short weightOneIcecream = 100;
+        byte eggs = 4;
+        byte weightEggs = 70;
+        double weightBreakfast = (bananas * weightOneBananas) + (milk * weightMilkOneMl) + (icecream * weightOneIcecream) + (eggs * weightEggs);
+        System.out.println("Вес завтрака " + weightBreakfast + " грамм.");
+
+
     }
 
     public static void task7 () {
