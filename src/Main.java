@@ -42,6 +42,7 @@ public class Main {
         byte g = 67;
         System.out.println(g);
     }
+
     public static void task3 () {
         System.out.println("Задача 3");
         byte teacher1 = 23;
@@ -93,12 +94,20 @@ public class Main {
         byte weightEggs = 70;
         double weightBreakfast = (bananas * weightOneBananas) + (milk * weightMilkOneMl) + (icecream * weightOneIcecream) + (eggs * weightEggs);
         System.out.println("Вес завтрака " + weightBreakfast + " грамм.");
-
-
     }
 
     public static void task7 () {
         System.out.println("Задача 7");
+        byte removeWeight = 7;
+        int remoweWeightInGramm = removeWeight * 1000;
+        short weightLoss1 = 250;
+        short weightLoss2 = 500;
+        int dayWeightLoss1 = remoweWeightInGramm / weightLoss1;
+        System.out.println("При снижении веса на " + weightLoss1 + " грамм в день - потребуется " + dayWeightLoss1 + " дней.");
+        int dayWeightLoss2 = remoweWeightInGramm / weightLoss2;
+        System.out.println("При снижении веса на " + weightLoss2 + " грамм в день - потребуется " + dayWeightLoss2 + " дней.");
+        int middleDayWeightLoss = (dayWeightLoss1 + dayWeightLoss2) / 2;
+        System.out.println("В среднем понадобится " + middleDayWeightLoss + " день.");
     }
 
 }
