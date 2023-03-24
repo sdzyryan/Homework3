@@ -55,6 +55,17 @@ public class Main {
 
     public static void task4 () {
         System.out.println("Задача 4");
+        byte power2min = 16;
+        int power1min = power2min / 2;
+        int minutes1Day = 24 * 60;
+        int power20Minutes = 20 * power1min;
+        System.out.println("За 20 минут машина произвела " + power20Minutes + " штук бутылок.");
+        int power1Day = minutes1Day * power1min;
+        System.out.println("За сутки машина произвела " + power1Day + " штук бутылок.");
+        int power3day = minutes1Day * 3 * power1min;
+        System.out.println("За 3 дня машина произвела " + power3day + " штук бутылок.");
+        int power1Months = minutes1Day * 30 * power1min;
+        System.out.println("За месяц машина произвела " + power1Months + " штук бутылок.");
     }
 
     public static void task5 () {
