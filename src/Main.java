@@ -130,7 +130,7 @@ public class Main {
         int salaryKristinaYear = salaryKristina * 12;
         float salaryKristinaYearNew = salaryKristinaNew * 12;
         float salaryKristinaDiff = salaryKristinaYearNew - salaryKristinaYear;
-        System.out.println("Кристина теперь получает " + salaryKristinaNew + " рублей, годовой доход вырос на " + salaryKristinaDiff + " рублей.");
+        System.out.println("Крис теперь получает " + salaryKristinaNew + " рублей, годовой доход вырос на " + salaryKristinaDiff + " рублей.");
 
     }
 
