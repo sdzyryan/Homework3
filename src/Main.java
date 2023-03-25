@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -93,8 +95,9 @@ public class Main {
         short weightOneIcecream = 100;
         byte eggs = 4;
         byte weightEggs = 70;
-        double weightBreakfast = (bananas * weightOneBananas) + (milk * weightMilkOneMl) + (icecream * weightOneIcecream) + (eggs * weightEggs);
-        System.out.println("Вес завтрака " + weightBreakfast + " грамм.");
+        double weightBreakfastInGr = (bananas * weightOneBananas) + (milk * weightMilkOneMl) + (icecream * weightOneIcecream) + (eggs * weightEggs);
+        double weightBreakfastInKg = weightBreakfastInGr / 1000D;
+        System.out.println("Вес завтрака " + weightBreakfastInGr + " грамм, или " + weightBreakfastInKg + " кг.");
     }
 
     public static void task7 () {
@@ -116,22 +119,24 @@ public class Main {
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryKristina = 76230;
-        float salaryMashaNew = salaryMasha * 1.1f;
-        int salaryMashaYear = salaryMasha * 12;
-        float salaryMashaYearNew = salaryMashaNew * 12;
-        float salaryMashaDiff = salaryMashaYearNew - salaryMashaYear;
-        System.out.println("Маша теперь получает " + salaryMashaNew + " рублей, годовой доход вырос на " + salaryMashaDiff + " рублей.");
-        float salaryDenisNew = salaryDenis * 1.1f;
-        int salaryDenisYear = salaryDenis * 12;
-        float salaryDenisYearNew = salaryDenisNew * 12;
-        float salaryDenisDiff = salaryDenisYearNew - salaryDenisYear;
-        System.out.println("Денис теперь получает " + salaryDenisNew + " рублей, годовой доход вырос на " + salaryDenisDiff + " рублей.");
-        float salaryKristinaNew = salaryKristina * 1.1f;
-        int salaryKristinaYear = salaryKristina * 12;
-        float salaryKristinaYearNew = salaryKristinaNew * 12;
-        float salaryKristinaDiff = salaryKristinaYearNew - salaryKristinaYear;
-        System.out.println("Крис теперь получает " + salaryKristinaNew + " рублей, годовой доход вырос на " + salaryKristinaDiff + " рублей.");
+        double indexPercent = 1.1;
+        double salaryMashaNew = salaryMasha * indexPercent;
+        double salaryMashaYear = salaryMasha * 12;
+        double salaryMashaYearNew = salaryMashaNew * 12;
+        double salaryMashaDiff = salaryMashaYearNew - salaryMashaYear;
+        System.out.printf("Маша теперь получает %.2f рублей, годовой доход вырос на %.2f рублей.%n", salaryMashaNew, salaryMashaDiff);
 
+        double salaryDenisNew = salaryDenis * indexPercent;
+        double salaryDenisYear = salaryDenis * 12;
+        double salaryDenisYearNew = salaryDenisNew * 12;
+        double salaryDenisDiff = salaryDenisYearNew - salaryDenisYear;
+        System.out.printf("Денис теперь получает %.2f рублей, годовой доход вырос на %.2f рублей.%n", salaryDenisNew, salaryDenisDiff);
+
+        double salaryKristinaNew = salaryKristina * indexPercent;
+        double salaryKristinaYear = salaryKristina * 12;
+        double salaryKristinaYearNew = salaryKristinaNew * 12;
+        double salaryKristinaDiff = salaryKristinaYearNew - salaryKristinaYear;
+        System.out.printf("Кристина теперь получает %.2f рублей, годовой доход вырос на %.2f рублей.%n", salaryKristinaNew, salaryKristinaDiff);
     }
 
 }
