@@ -113,6 +113,24 @@ public class Main {
 
     public static void task8 () {
         System.out.println("Задача 8");
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        float salaryMashaNew = salaryMasha * 1.1f;
+        int salaryMashaYear = salaryMasha * 12;
+        float salaryMashaYearNew = salaryMashaNew * 12;
+        float salaryMashaDiff = salaryMashaYearNew - salaryMashaYear;
+        System.out.println("Маша теперь получает " + salaryMashaNew + " рублей, годовой доход вырос на " + salaryMashaDiff + " рублей.");
+        float salaryDenisNew = salaryDenis * 1.1f;
+        int salaryDenisYear = salaryDenis * 12;
+        float salaryDenisYearNew = salaryDenisNew * 12;
+        float salaryDenisDiff = salaryDenisYearNew - salaryDenisYear;
+        System.out.println("Денис теперь получает " + salaryDenisNew + " рублей, годовой доход вырос на " + salaryDenisDiff + " рублей.");
+        float salaryKristinaNew = salaryKristina * 1.1f;
+        int salaryKristinaYear = salaryKristina * 12;
+        float salaryKristinaYearNew = salaryKristinaNew * 12;
+        float salaryKristinaDiff = salaryKristinaYearNew - salaryKristinaYear;
+        System.out.println("Кристина теперь получает " + salaryKristinaNew + " рублей, годовой доход вырос на " + salaryKristinaDiff + " рублей.");
 
     }
 
